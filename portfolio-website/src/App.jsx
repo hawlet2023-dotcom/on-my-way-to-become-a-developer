@@ -1,6 +1,7 @@
 import React from 'react';
 import Service from './components/Service';
 import Experience from './components/Experience';
+import RecentWorks from './components/RecentWorks';
 
 import profileImg from './assets/images/profile.png';
 import logoImg from './assets/icons/logo.png'; 
@@ -112,6 +113,9 @@ export default function App() {
 
       
       <Experience />
+
+      <RecentWorks/>
+      
     </div>
   );
 }
