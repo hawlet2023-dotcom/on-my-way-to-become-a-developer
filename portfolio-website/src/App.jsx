@@ -1,7 +1,8 @@
 import React from 'react';
 import Service from './components/Service';
 import Experience from './components/Experience';
-import RecentWorks from './components/RecentWorks';
+import RecentWork from './components/RecentWorks';
+import Footer from './components/Footer';
 
 import profileImg from './assets/images/profile.png';
 import logoImg from './assets/icons/logo.png'; 
@@ -43,10 +44,10 @@ export default function App() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#2d2e43] text-white font-sans">
-      {/* ================= TASK 1: HERO SECTION WITH SIDEBAR ================= */}
+    <div className="bg-[#2d2e43] text-white font-sans min-h-screen overflow-y-auto">
+      
       <div className="flex min-h-screen">
-        {/* SIDEBAR - LIVES ONLY IN TASK 1 */}
+        
         <aside className="w-16 md:w-20 bg-[#252636] border-r border-slate-700/50 flex flex-col items-center py-6 justify-between shrink-0">
           <div className="w-8 h-8 mb-8 flex items-center justify-center">
             <img src={logoImg} alt="Logo" className="w-full h-full object-contain" />
@@ -73,7 +74,7 @@ export default function App() {
             <div className="relative w-36 h-36 md:w-40 md:h-40 rounded-full bg-[#00e5ff] overflow-hidden flex items-center justify-center p-1">
               <img
                 src={profileImg}
-                alt=" WAHID Ahmed"
+                alt="WAHID Ahmed"
                 className="w-full h-full object-contain rounded-full"
               />
             </div>
@@ -108,13 +109,12 @@ export default function App() {
         </section>
       </div>
 
+     
+      <Service/>
+      <Experience/>
+      <RecentWork/>
       
-      <Service />
-
-      
-      <Experience />
-
-      <RecentWorks/>
+<Footer />
       
     </div>
   );
