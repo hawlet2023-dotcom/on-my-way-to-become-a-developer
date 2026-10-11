@@ -1,7 +1,5 @@
 import React from 'react';
-import card7 from '../assets/images/card7.png';
-import card8 from '../assets/images/card8.png';
-import card9 from '../assets/images/card9.png';
+
 
 import html5 from '../assets/icons/html5.png'; 
 import css from '../assets/icons/css.png';
@@ -13,6 +11,10 @@ import elementor from '../assets/icons/elementor.png';
 import wordpress from '../assets/icons/wordpress.png';
 import tailwind from '../assets/icons/tailwind.png';
 import jQuiry from '../assets/icons/jQuery.png';
+
+import card7 from '../assets/images/card7.png';
+import card8 from '../assets/images/card8.png';
+import card9 from '../assets/images/card9.png';
 
 const iconsList = [
   { src: html5, alt: 'HTML5' }, { src: css, alt: 'CSS' },
