@@ -1,11 +1,12 @@
 import React from 'react'; 
 import logo from '../../assets/image/logo.png'
 import {Link} from 'react-router-dom' 
-import {Search,Bell,User,ChevronDown} from 'lucide-react' 
+import {Search,Bell,User,ChevronDown } from 'lucide-react'
+import styles from './Header.module.css' 
 function Header() {
   return (
-    <header>
-    <div>
+    <header className={styles.header}>
+    <div className={styles.container}>
             {/*logo*/}
       <img src={logo} alt="" />
 
@@ -43,17 +44,12 @@ function Header() {
     <div>
 <User/>
     </div>
-     
+     <ChevronDown/>
     {/* dropdown icon */}
-    <ChevronDown/>
    </button>
 </div>
-
-
   </div>
-
     </div>
-
     </header>
     
   )
