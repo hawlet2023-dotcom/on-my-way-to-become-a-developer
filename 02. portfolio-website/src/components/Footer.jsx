@@ -1,6 +1,4 @@
 import React from 'react';
-
-
 import html5 from '../assets/icons/html5.png'; 
 import css from '../assets/icons/css.png';
 import javascript from '../assets/icons/javascript.png';
@@ -36,7 +34,7 @@ export default function FooterSection() {
     <footer className="w-full bg-white text-slate-800 py-16 px-6">
       <div className="max-w-6xl mx-auto">
         
-        {/* 1. Tech & Social Logos Grid */}
+       
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 items-center justify-items-center opacity-80 mb-20">
           {iconsList.map((icon, index) => (
             <div key={index} className="w-12 h-12 flex items-center justify-center p-2">
@@ -45,7 +43,7 @@ export default function FooterSection() {
           ))}
         </div>
 
-        {/* 2. Latest Posts Section */}
+        {/* Latest Posts Section */}
         <div className="mb-20">
           <div className="flex items-center gap-2 mb-8">
             <span className="w-3 h-3 bg-cyan-400 rotate-45 inline-block"></span>
@@ -67,7 +65,7 @@ export default function FooterSection() {
           </div>
         </div>
 
-        {/* 3. Get In Touch Section */}
+        {/*get In Touch Section */}
         <div>
           <div className="flex items-center gap-2 mb-8">
             <span className="w-3 h-3 bg-cyan-400 rotate-45 inline-block"></span>

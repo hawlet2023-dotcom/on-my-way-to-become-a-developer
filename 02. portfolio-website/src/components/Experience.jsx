@@ -1,5 +1,4 @@
 import React from 'react';
-
 import capIcon from '../assets/icons/education.png';
 
 export default function Experience() {
@@ -90,7 +89,7 @@ export default function Experience() {
                   <img src={capIcon} alt="Icon" className="w-full h-full object-contain brightness-0 invert" />
                 </div>
 
-                {/* Timeline Content */}
+                
                 <div className="border-l border-slate-600 pl-4 space-y-1">
                   <span className="text-slate-400 text-xs font-medium block">
                     {item.date}

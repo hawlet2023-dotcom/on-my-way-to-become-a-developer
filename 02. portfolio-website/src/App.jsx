@@ -67,7 +67,7 @@ export default function App() {
           </nav>
         </aside>
 
-        {/* HERO CONTENT AREA */}
+        {/* HERO AREA */}
         <section className="flex-1 flex flex-col items-center justify-center relative p-6">
           <div className="relative mb-6">
             <div className="absolute inset-0 rounded-full bg-[#00e5ff] blur-xl opacity-50 transform scale-110"></div>

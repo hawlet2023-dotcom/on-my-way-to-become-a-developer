@@ -8,7 +8,6 @@ import htmlIcon from '../assets/icons/html.png';
 import wordpressIcon from '../assets/icons/word.png';
 import videoIcon from '../assets/icons/video.png';
 import figmaIcon from '../assets/icons/figma.png';
-
 export default function Service() {
   const skills = [
     { name: 'HTML', level: '92%', color: '#00e5ff' },        // Bright Cyan

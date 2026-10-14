@@ -13,18 +13,14 @@ export default function RecentWorks() {
   return (
     <div className="min-h-screen bg-[#F8F9FD] py-12 px-4 sm:px-6 lg:px-8 font-sans text-slate-800">
       <div className="max-w-4xl mx-auto space-y-16">
-
-        {/* SECTION 1: RECENT WORKS */}
         <section>
-          {/* Header Title with Background Diamond Accent */}
           <div className="relative flex items-center mb-6">
             <div className="absolute -left-2 w-6 h-6 bg-indigo-200 opacity-60 rotate-45 rounded-sm" />
             <h2 className="relative z-10 text-xl font-extrabold text-slate-900 tracking-tight">
               Recent works
             </h2>
           </div>
-
-          {/* Navigation Filter Tabs */}
+          {/* Navigation */}
           <div className="flex flex-wrap gap-6 mb-8 text-sm font-semibold">
             {categories.map((cat, index) => (
               <button
@@ -40,7 +36,7 @@ export default function RecentWorks() {
             ))}
           </div>
 
-          {/* Portfolio Items Grid */}
+          {/* Portfolio Items */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
 
             {/* Card 1 */}
@@ -48,7 +44,7 @@ export default function RecentWorks() {
               <img src={card1} alt="Recent work 1" className="max-h-full max-w-full object-contain" />
             </div>
 
-            {/* Card 2 - Highlight Card */}
+            {/* Card 2 */}
             <div className="bg-[#6EE7E7] rounded-2xl h-52 p-6 flex flex-col justify-between relative shadow-sm hover:shadow-md transition-shadow">
               <div>
                 <span className="inline-block bg-[#1CC800] text-white text-xs font-bold px-3 py-1 rounded-full mb-3">
@@ -85,7 +81,7 @@ export default function RecentWorks() {
           </div>
         </section>
 
-        {/* SECTION 2: CLIENTS & REVIEWS */}
+        {/* SECTION 2 */}
         <section>
           {/* Header Title with Background Diamond Accent */}
           <div className="relative flex items-center mb-8">
@@ -95,36 +91,30 @@ export default function RecentWorks() {
             </h2>
           </div>
 
-          {/* Testimonial Content Box */}
+          
           <div className="flex flex-col items-center text-center">
             
-            {/* User Avatar */}
+            {/*  Avatar */}
             <div className="w-12 h-12 rounded-full overflow-hidden mb-3 shadow-sm">
               <img src={userAvatar} alt="Sarowar Hossen" className="w-full h-full object-cover" />
             </div>
 
-            {/* Author Info */}
+            
             <h3 className="text-xs font-bold uppercase tracking-wider text-slate-900 mb-1">
               SAROWAR HOSSEN
             </h3>
             <p className="text-[11px] text-slate-500 font-medium mb-6">
               Product designer at Dribbble
             </p>
-
-            {/* Dark Speech Bubble */}
             <div className="bg-[#3B3C54] text-white text-xs leading-relaxed px-6 py-4 rounded-xl max-w-md shadow-lg mb-6">
               I enjoy working with the theme and learn so much. You guys make <br/> the process fun and interesting. Good luck! 👍
             </div>
-
-            {/* Pagination Indicators */}
             <div className="flex items-center gap-1.5">
               <span className="w-4 h-1 bg-emerald-200 rounded-full" />
               <span className="w-4 h-1 bg-emerald-500 rounded-full" />
             </div>
-
           </div>
         </section>
-
       </div>
     </div>
   );
