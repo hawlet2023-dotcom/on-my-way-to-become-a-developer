@@ -1,9 +1,12 @@
-import React from 'react'; 
+import { useState } from 'react'; 
 import logo from '../../assets/image/logo.png'
 import {Link} from 'react-router-dom' 
 import {Search,Bell,User,ChevronDown } from 'lucide-react' 
 import styles from './Header.module.css' 
 function Header() {
+   const [isSearchOpen, setIsSearchOpen] = useState(false)
+   const [isProfileOpen, setIsProfileOpen] = useState(false)
+
   return (
     <header className={styles.header}>
     <div className={styles.container}>
@@ -24,9 +27,18 @@ function Header() {
   <div className={styles.rightSection}>
         {/* search*/}
 <div className={styles.searchSection}>
-  <button className={styles.searchButton}>
+  <button
+  onClick={()=> setIsSearchOpen(!isSearchOpen)}
+  className={styles.searchButton}>
     <Search size={20}/>
   </button>
+  {
+    isSearchOpen && (
+      <input type="text" 
+      placeholder='movie title'
+      className={styles.searchInput}
+       />
+    )}
 </div>
 
         {/* notification*/}
@@ -39,7 +51,9 @@ function Header() {
 
         {/* profile */}   
 <div className={styles.profileContainer}>
-   <button className={styles.profileButton}>
+   <button
+   onClick={()=>setIsProfileOpen(!isProfileOpen)}
+   className={styles.profileButton}>
     {/*user icon*/}
     <div className={styles.profileAvatar}>
 <User size={20}/>
@@ -47,6 +61,21 @@ function Header() {
      <ChevronDown size={20}/>
     {/* dropdown icon */}
    </button>
+{
+   isProfileOpen&& (
+    <div className={styles.profileMenu}>
+      <Link className={styles.profileMenuItem}> Account </Link>
+      <Link className={styles.profileMenuItem} > help Center </Link>
+      <hr className={styles.profileMenuDivider}/>
+      <button className={styles.profileMenuItem}>sign out</button>
+    </div>
+   )
+
+}
+
+
+
+
 </div>
   </div>
     </div>
