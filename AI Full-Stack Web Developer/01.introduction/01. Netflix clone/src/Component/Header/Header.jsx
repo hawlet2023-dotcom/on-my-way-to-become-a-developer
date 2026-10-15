@@ -6,9 +6,23 @@ import styles from './Header.module.css'
 function Header() {
    const [isSearchOpen, setIsSearchOpen] = useState(false)
    const [isProfileOpen, setIsProfileOpen] = useState(false)
+  //  for blur
+  const [isScrolled, setIsScrolled]=useState (false)
 
+  useEffect(()=> {
+    const handleScroll =()=>{
+      if(window.scrollY >50){
+        setIsScrolled(true)
+      }else {
+        setIsScrolled(false)
+      }
+    }
+        window.addEventListener('scroll',handleScroll)
+        return ()=> window.removeEventListener('scroll' , handleScroll)
+ },[])
+ 
   return (
-    <header className={styles.header}>
+    <header className={`${styles.header} ${isScrolled? styles.scrolled:""}`}>
     <div className={styles.container}>
             {/*logo*/}
       <img className={styles.logo} src={logo} alt=""/>

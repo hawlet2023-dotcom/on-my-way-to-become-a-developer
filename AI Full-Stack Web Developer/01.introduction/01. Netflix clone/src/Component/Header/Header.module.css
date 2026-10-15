@@ -7,7 +7,7 @@
     width: 100%;
     z-index: 100;
     backdrop-filter: blur(3px);
-    background-color: black;
+   transition: background-color 0.4s ease;
 }
 
 .container {
@@ -174,7 +174,7 @@
     display: block;
     width: 100%;
     padding: 12px 16px;
-    color: f5f5f1;
+    color: #f5f5f1;
     text-align: left;
     background: none;
     border: none;
@@ -183,7 +183,7 @@
     transition: background-color 0.2s ease;
     text-decoration: none;
 }
-.profileMenu:hover {
+.profileMenuItem:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
 .profileMenuDivider {
@@ -191,3 +191,58 @@
     border-top: 1px solid #404040;
     margin: 8px 0;
 }
+/* Responsive */
+@media (max-width:1024px) {
+    .container {
+        padding: 0 24px;
+        gap: 24px;
+    }
+    .nav {
+        gap: 16px;
+    }
+    .navLink {
+        font-size: 13px;
+    }
+    .searchInput {
+        width: 150px;
+    }
+}
+@media (max-width:768px) {
+    .container {
+        padding: 0 16px;
+        gap: 16px;
+    }
+    .nav {
+        display: none;
+      gap: 13px;
+ } 
+   .logo {
+    width: 80px;
+   }
+    .searchInput {
+        width: 120px;
+    }
+    .rightSection {
+        gap: 16px;
+    }
+}
+
+@media (max-width:480px) {
+    .container {
+        padding: 0 12px;
+     }
+   .logo {
+    width: 70px;
+   }
+    .searchInput {
+        width: 100px;
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+    .rightSection {
+        gap: 12px;
+    }
+}
+
+
+
