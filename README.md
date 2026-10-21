@@ -12,12 +12,9 @@ This repository contains my projects, practice work, and progress as I learn web
 
 ## 🛠️ Technologies
 
-- HTML
-- CSS
-- JavaScript
-- React
-- Tailwind CSS
-- Git and GitHub
+. Fronted: HTML5, CSS3, JavaScript(ES6+), React, Tailwind CSS, CSS Module, Vite
+. Backend & Database: Node.js, Express.js , MySQL, MAMP
+. Tools & Version Control: Git, GitHub, VS code
 
 ## 🎯 My Goal
 
