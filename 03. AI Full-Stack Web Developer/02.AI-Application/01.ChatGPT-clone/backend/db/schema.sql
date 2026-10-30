@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS conversation (
+    id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY Key,
+    role ENUM('user', 'assistant') NOT NULL,
+    content TEXT NOT NULL,
+    token_count TNT UNSIGNED NOT NULL DEFAULT 0,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
