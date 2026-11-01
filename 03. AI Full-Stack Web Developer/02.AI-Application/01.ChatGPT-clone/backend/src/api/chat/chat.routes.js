@@ -1,10 +1,10 @@
 import express from'express'
-const chatRoutes = express.Router()
+const chatRouter = express.Router()
 import { createConversationController, 
     getConversationsController }
      from './controller/chat.controller.js'
 // /api/chat/conversations
-    chatRouter.post('/conversation', createConversationController)
+    chatRouter.post('/conversations', createConversationController)
 
     chatRouter.get('/conversations', getConversationsController)
 

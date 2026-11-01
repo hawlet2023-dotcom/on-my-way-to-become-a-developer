@@ -1,6 +1,23 @@
-export function createConversationController(req, res) {
-    res.send('create conversaticreateConversationControlleron api')
+import { createConversationService } from "../service/chat.service.js"
+export async function createConversationController(req, res) {
+    try{
+       const { question } = req.body
+
+       const result = await createConversationService(question)
+       
+       res.status(201).json({
+        success: true,
+        message:"conversation posted successfully.",
+        data:result,
+       })
+    } catch (error) {
+        throw error
+    }   
 }
-export function getConversationsController(req, res) {
-  res.send('get conversations api')
+export async function getConversationsController(req, res) {
+  try {
+    res.send('get conversations api')
+  } catch (error) {
+    throw error
+  }
 }
