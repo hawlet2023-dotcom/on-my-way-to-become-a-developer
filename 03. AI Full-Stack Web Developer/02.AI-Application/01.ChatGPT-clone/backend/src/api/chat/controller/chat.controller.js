@@ -1,14 +1,9 @@
-import { createConversationService } from "../service/chat.service.js"
-import {  GoogleGenAI } from '@google/genai'
+import {
+   createConversationService,
+   getRecentConversationRows,
+   } from "../service/chat.service.js"
 
-const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-2.0-flash-lite'
 
-const createGeminiClient = () => {
-  if (!process.env.GEMINI_API_KEY) {
-    throw new Error('GEMINI_API_KEY environment variable is required')
-  }
-  return new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY })
-}
 
 export async function createConversationController(req, res) {
     try{
@@ -27,7 +22,12 @@ export async function createConversationController(req, res) {
 }
 export async function getConversationsController(req, res) {
   try {
-    res.send('get conversations api')
+    const result = await getRecentConversationRows(100)
+    res.status(200).json({
+      cuccess:true,
+      message: 'conversations fetched successfully.',
+      data:result,
+    })
   } catch (error) {
     throw error
   }

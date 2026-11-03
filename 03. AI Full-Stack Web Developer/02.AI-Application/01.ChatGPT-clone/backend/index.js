@@ -7,6 +7,7 @@ import mainRouter from './src/api/main.routes.js'
 
 const app = express()
 app.use(express.json())
+app.use(express.yrlencoded({ extended: true }))
 app.use('/api', mainRouter)
 
 //  final middleware from error handling
