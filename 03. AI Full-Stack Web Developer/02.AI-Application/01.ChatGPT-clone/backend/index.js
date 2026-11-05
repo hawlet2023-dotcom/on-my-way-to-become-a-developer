@@ -2,12 +2,16 @@ import 'dotenv/config'
 
 import express from 'express'
 import db from './db/db.config.js'
+import cors from 'cors'
 import { errorHandler } from './src/middleware/error.handler.js'
 import mainRouter from './src/api/main.routes.js'
 
 const app = express()
+app.use(
+  cors({
+  origin:'http://localhost:5174'
+}))
 app.use(express.json())
-app.use(express.yrlencoded({ extended: true }))
 app.use('/api', mainRouter)
 
 //  final middleware from error handling
