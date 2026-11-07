@@ -2,7 +2,7 @@ import { User, Bot } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import styles from './ChatMessage.module.css';
 
-export default function ChatMessage({ role, content }) {
+ function ChatMessage({ role, content }) {
   return (
     <div className={`${styles.message} ${styles[role]}`}>
       <div className={`${styles.avatar} ${styles[role]}`}>
@@ -13,7 +13,8 @@ export default function ChatMessage({ role, content }) {
         )}
       </div>
       <div className={styles.content}>
-        {role === 'user' ? (
+        { 
+           role === 'user' ? (
           content
         ) : (
           <div className={styles.markdownBody}>
@@ -24,3 +25,4 @@ export default function ChatMessage({ role, content }) {
     </div>
   );
 }
+export default ChatMessage

@@ -30,7 +30,7 @@ function Sidebar() {
           <span>New chat</span>
         </a>
         <a href="#" className={styles.item}>
-          <search size={18}/>
+          <Search size={18}/>
           <span>Search chats</span>
         </a>
        <a href="#" className={styles.item}>

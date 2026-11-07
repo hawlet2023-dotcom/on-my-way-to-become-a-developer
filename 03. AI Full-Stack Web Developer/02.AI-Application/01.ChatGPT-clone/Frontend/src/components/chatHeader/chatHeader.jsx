@@ -6,11 +6,12 @@ function ChatHeader() {
         <header className={styles.header}>
             <div className={styles.left}>
                 <span>chatGpt</span>
-                <chevronDown size={16}/>
+                <ChevronDown size={16}/>
             </div>
             <div className={styles.right}>
-                <div className={styles.avatar}IT></div>
+                <div className={styles.avatar}>MA</div>
             </div>
+            <div/>
         </header>
     )
 }
