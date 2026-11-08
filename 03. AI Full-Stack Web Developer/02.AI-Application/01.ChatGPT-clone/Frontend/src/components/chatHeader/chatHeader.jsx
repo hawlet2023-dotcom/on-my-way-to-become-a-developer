@@ -9,7 +9,7 @@ function ChatHeader() {
                 <ChevronDown size={16}/>
             </div>
             <div className={styles.right}>
-                <div className={styles.avatar}>MA</div>
+                <div className={styles.avatar}>HA</div>
             </div>
             <div/>
         </header>
