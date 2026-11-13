@@ -92,3 +92,10 @@ Semantic search uses these representations to retrieve relevant information base
 ## 🚀 Learning Goal
 
 To build a strong foundation in AI-powered applications by understanding how embeddings and semantic search work behind modern search engines, recommendation systems, chatbots, and intelligent applications.
+
+## 📌 Additional Notes
+
+- This topic is an important foundation for understanding modern AI applications.
+- Embeddings help computers connect words, sentences, and documents based on their meanings.
+- Vector similarity makes information retrieval more intelligent and efficient.
+- Understanding these concepts will be useful when learning Vector Databases, RAG, and AI-powered search systems.
