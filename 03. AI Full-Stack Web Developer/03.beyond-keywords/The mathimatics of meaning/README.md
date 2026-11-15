@@ -99,3 +99,15 @@ To build a strong foundation in AI-powered applications by understanding how emb
 - Embeddings help computers connect words, sentences, and documents based on their meanings.
 - Vector similarity makes information retrieval more intelligent and efficient.
 - Understanding these concepts will be useful when learning Vector Databases, RAG, and AI-powered search systems.
+  
+ ## 🔗 Related Topics to Explore
+
+- Machine Learning
+- Natural Language Processing (NLP)
+- Vector Databases
+- Retrieval-Augmented Generation (RAG)
+- AI-powered Applications
+
+## 📈 Next Learning Step
+
+Explore how Vector Databases store and retrieve embeddings to build semantic search system
