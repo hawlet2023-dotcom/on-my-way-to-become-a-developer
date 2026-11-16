@@ -111,3 +111,35 @@ To build a strong foundation in AI-powered applications by understanding how emb
 ## 📈 Next Learning Step
 
 Explore how Vector Databases store and retrieve embeddings to build semantic search system
+
+## ⚙️ Semantic Search Workflow
+
+Semantic search works through two main phases:
+
+1. Indexing Phase
+
+- Collect documents and information.
+- Divide long documents into smaller chunks.
+- Convert each chunk into an embedding vector.
+- Store vectors with their original text and metadata.
+- Build a vector index for efficient searching.
+
+2. Query Phase
+
+- Receive a user's search query.
+- Convert the query into an embedding vector.
+- Compare it with stored document vectors.
+- Calculate similarity scores.
+- Rank and return the most relevant results.
+
+## 📖 Important Terminologies
+
+Term| Description
+Vector| A list of numerical values representing information.
+Embedding| Numerical representation of text based on its meaning.
+Dimension| A coordinate or feature in a vector space.
+Similarity Score| A measurement of how closely two vectors are related.
+Threshold| Minimum similarity score required to accept a result.
+Chunking| Breaking large documents into smaller sections.
+Vector Index| A structure that helps retrieve similar vectors efficiently.
+Hybrid Search| Combining keyword search and semantic search.
