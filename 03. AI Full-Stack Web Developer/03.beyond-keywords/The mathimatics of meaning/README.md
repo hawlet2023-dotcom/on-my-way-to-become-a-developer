@@ -152,13 +152,12 @@ Embeddings and semantic search are useful in:
 - Document retrieval systems.
 - Retrieval-Augmented Generation (RAG).
 
+## 📈 Next Learning Step
+
+Explore how Vector Databases store and retrieve embeddings to build semantic search system
+
 ## 🎓 Final Learning Outcome
 
 After studying this topic, I gained an understanding of how text can be transformed into numerical vectors, how similarity between vectors is measured, and how semantic search retrieves meaningful information.
 
 These concepts provide a foundation for understanding how modern AI systems retrieve and process information.
-
-
-## 📈 Next Learning Step
-
-Explore how Vector Databases store and retrieve embeddings to build semantic search system
